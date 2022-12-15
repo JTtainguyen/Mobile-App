@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background"
+        tools:context=".NewFeed">
+        <RelativeLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/primary_color"
+            >
+            <ImageView
+                android:id="@+id/textlogo"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="30dp"
+                android:src="@drawable/facebooktextlight"
+                />
+        </RelativeLayout>
+
+        <FrameLayout
+            android:layout_marginTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:id="@+id/post"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/white"
+                    >
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:src="@drawable/userimage"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        />
+                    <EditText
+                        android:id="@+id/newpost"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="70dp"
+                        android:layout_marginRight="50dp"
+                        android:hint="What's on your mind?"
+                        />
+                    <ImageView
+                        android:id="@+id/imagepost"
+                        android:layout_width="50dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/photosicon"
+                        />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/content1"
+                    android:layout_marginTop="5dp"
+                    android:paddingBottom="10dp"
+                    android:layout_below="@+id/post"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    >
+                    <ImageView
+                        android:id="@+id/userimage"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="20dp"
+                        android:src="@drawable/userimage"
+                        />
+
+                    <TextView
+                        android:id="@+id/username"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="80dp"
+                        android:textSize="20dp"
+                        android:text="Ngô Thế Dũng"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:gravity="center"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="80dp"
+                        android:textSize="16dp"
+                        android:text="10 mins ago"
+                        android:textColor="@color/grey"
+                        android:layout_below="@id/username"
+                        android:gravity="center"
+                        />
+                    <TextView
+                        android:id="@+id/postcontent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/userimage"
+                        android:layout_marginHorizontal="20dp"
+                        android:textSize="16dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/black"
+                        android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+                        />
+                    <ImageView
+                        android:id="@+id/postimage"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:layout_below="@id/postcontent"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/postimage"
+                        android:scaleType="fitXY"
+                        android:layout_marginHorizontal="2dp"
+                        />
+
+                    <RelativeLayout
+                        android:id="@+id/reaction"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_below="@id/postimage"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginHorizontal="10dp"
+                        >
+                        <TextView
+                            android:id="@+id/like"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:text="🤣😥❤ 100"
+                            android:layout_marginLeft="2dp"
+                            />
+                        <TextView
+                            android:id="@+id/comment"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:text="20 comments"
+                            android:layout_marginLeft="200dp"
+                            android:layout_alignLeft="@id/like"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:text="1 shares"
+                            android:layout_alignParentRight="true"
+                            />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_below="@id/reaction"
+                        android:orientation="horizontal"
+                        android:layout_marginHorizontal="10dp"
+                        >
+                        <RelativeLayout
+                            android:layout_width="70dp"
+                            android:layout_height="30dp">
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:src="@drawable/likeicon"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="5dp"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:text="Like"
+                                android:gravity="center"
+                                android:textSize="16dp"
+                                android:layout_alignParentRight="true"
+                                />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="50dp"
+                            >
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_marginTop="5dp"
+                                android:src="@drawable/commenticon"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:text="Comment"
+                                android:gravity="center"
+                                android:textSize="16dp"
+                                android:layout_marginLeft="30dp"
+                                android:layout_alignParentLeft="true"
+                                />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="50dp"
+                            android:gravity="center"
+                            >
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:src="@drawable/shareicon"
+                                android:layout_marginTop="5dp"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:text="Share"
+                                android:gravity="center"
+                                android:textSize="16dp"
+                                android:layout_marginLeft="30dp"
+                                android:layout_alignParentLeft="true"
+                                />
+                        </RelativeLayout>
+
+                    </LinearLayout>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/content2"
+                    android:layout_marginTop="5dp"
+                    android:paddingBottom="10dp"
+                    android:layout_below="@+id/content1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    >
+                    <ImageView
+                        android:id="@+id/userimage2"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="20dp"
+                        android:src="@drawable/userimage"
+                        />
+
+                    <TextView
+                        android:id="@+id/username2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="80dp"
+                        android:textSize="20dp"
+                        android:text="Ngô Thế Dũng"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:gravity="center"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="80dp"
+                        android:textSize="16dp"
+                        android:text="10 mins ago"
+                        android:textColor="@color/grey"
+                        android:layout_below="@id/username2"
+                        android:gravity="center"
+                        />
+                    <TextView
+                        android:id="@+id/postcontent2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/userimage2"
+                        android:layout_marginHorizontal="20dp"
+                        android:textSize="16dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/black"
+                        android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+                        />
+                    <ImageView
+                        android:id="@+id/postimage2"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:layout_below="@id/postcontent2"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/postimage"
+                        android:scaleType="fitXY"
+                        android:layout_marginHorizontal="2dp"
+                        />
+
+                    <RelativeLayout
+                        android:id="@+id/reaction2"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_below="@id/postimage2"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginHorizontal="10dp"
+                        >
+                        <TextView
+                            android:id="@+id/like2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:text="🤣😥❤ 100"
+                            android:layout_marginLeft="2dp"
+                            />
+                        <TextView
+                            android:id="@+id/comment2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:text="20 comments"
+                            android:layout_marginLeft="200dp"
+                            android:layout_alignLeft="@id/like2"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:text="1 shares"
+                            android:layout_alignParentRight="true"
+                            />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_below="@id/reaction2"
+                        android:orientation="horizontal"
+                        android:layout_marginHorizontal="10dp"
+                        >
+                        <RelativeLayout
+                            android:layout_width="70dp"
+                            android:layout_height="30dp">
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:src="@drawable/likeicon"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="5dp"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:text="Like"
+                                android:gravity="center"
+                                android:textSize="16dp"
+                                android:layout_alignParentRight="true"
+                                />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="50dp"
+                            >
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_marginTop="5dp"
+                                android:src="@drawable/commenticon"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:text="Comment"
+                                android:gravity="center"
+                                android:textSize="16dp"
+                                android:layout_marginLeft="30dp"
+                                android:layout_alignParentLeft="true"
+                                />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="50dp"
+                            android:gravity="center"
+                            >
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:src="@drawable/shareicon"
+                                android:layout_marginTop="5dp"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:text="Share"
+                                android:gravity="center"
+                                android:textSize="16dp"
+                                android:layout_marginLeft="30dp"
+                                android:layout_alignParentLeft="true"
+                                />
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <com.google.android.material.bottomnavigation.BottomNavigationView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </FrameLayout>
+
+    </RelativeLayout>
+</ScrollView>

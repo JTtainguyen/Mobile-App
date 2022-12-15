@@ -67,7 +67,7 @@
 
 
     <Button
-        android:id="@+id/signin"
+        android:id="@+id/signup"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_below="@id/password_again"
@@ -77,10 +77,11 @@
         android:text="Sign Up"
         android:textSize="20dp"
         app:cornerRadius="10dp"
+        android:textColor="@color/white"
         ></Button>
 
     <Button
-        android:id="@+id/signup"
+        android:id="@+id/signin"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_alignParentBottom="true"

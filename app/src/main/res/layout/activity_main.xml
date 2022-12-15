@@ -62,6 +62,7 @@
         android:backgroundTint="@color/primary_color"
         android:text="Sign In"
         android:textSize="20dp"
+        android:textColor="@color/white"
         app:cornerRadius="10dp"
         ></Button>
 
