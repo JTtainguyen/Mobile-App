@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SignUp">
+    tools:context=".model.SignUp">
     <ImageView
         android:id="@+id/mainicon"
         android:layout_width="match_parent"
@@ -14,43 +14,43 @@
         android:layout_marginTop="20dp"></ImageView>
 
     <EditText
-        android:id="@+id/first_name"
+        android:id="@+id/full_name"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_below="@+id/mainicon"
         android:layout_centerInParent="true"
-        android:layout_marginTop="20dp"
         android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
+        android:hint="Full Name"
         android:inputType="text"
-        android:hint="First Name"
-        android:textSize="20dp"
-        android:textColor="@color/black"></EditText>
+        android:textColor="@color/black"
+        android:textSize="20dp"></EditText>
 
     <EditText
-        android:id="@+id/last_name"
+        android:id="@+id/username"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:layout_below="@+id/first_name"
+        android:layout_below="@+id/full_name"
         android:layout_centerInParent="true"
-        android:layout_marginTop="20dp"
         android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
+        android:hint="User Name"
         android:inputType="text"
-        android:hint="Last Name"
-        android:textSize="20dp"
-        android:textColor="@color/black"></EditText>
+        android:textColor="@color/black"
+        android:textSize="20dp"></EditText>
 
     <EditText
         android:id="@+id/password"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:layout_below="@+id/last_name"
+        android:layout_below="@+id/username"
         android:layout_centerInParent="true"
         android:layout_marginHorizontal="20dp"
-        android:inputType="text"
+        android:layout_marginTop="20dp"
         android:hint="Password"
-        android:textSize="20dp"
+        android:inputType="text"
         android:textColor="@color/black"
-        android:layout_marginTop="20dp"></EditText>
+        android:textSize="20dp"></EditText>
 
     <EditText
         android:id="@+id/password_again"
@@ -59,11 +59,11 @@
         android:layout_below="@+id/password"
         android:layout_centerInParent="true"
         android:layout_marginHorizontal="20dp"
-        android:inputType="text"
+        android:layout_marginTop="20dp"
         android:hint="Retype Password"
-        android:textSize="20dp"
+        android:inputType="text"
         android:textColor="@color/black"
-        android:layout_marginTop="20dp"></EditText>
+        android:textSize="20dp"></EditText>
 
 
     <Button

@@ -1,4 +1,4 @@
-package vn.edu.usth.facebookclone;
+package vn.edu.usth.facebookclone.model;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+
+import vn.edu.usth.facebookclone.R;
 
 public class PostActivity extends AppCompatActivity {
     ImageView closeBtn;

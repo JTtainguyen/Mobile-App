@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Comment">
+    tools:context=".model.Comment">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -58,6 +58,7 @@
                 android:textStyle="bold"
                 />
             <TextView
+                android:id="@+id/commentText"
                 android:layout_marginLeft="65dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
